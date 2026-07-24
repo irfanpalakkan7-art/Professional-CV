@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCV - Premium AI Resume Builder</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- App Container -->
+    <div id="app-container">
+        
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-file-signature"></i> Pro<span>CV</span>
+            </div>
+            <div class="nav-links">
+                <a href="#landing" class="nav-link active" data-view="landing">Home</a>
+                <a href="#templates" class="nav-link" data-view="templates">Templates</a>
+                <a href="#dashboard" class="nav-link" data-view="dashboard">Dashboard</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <button class="btn btn-primary" onclick="app.navigateTo('editor')">Create Resume <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- Views will be dynamically injected here -->
+        </main>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <script src="js/store.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
